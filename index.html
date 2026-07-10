@@ -8,6 +8,7 @@
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8390044664346060"
      crossorigin="anonymous"></script>
 <link rel="icon" href="data:image/svg+xml,...">
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -49,5 +50,10 @@
 
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
 </body>
 </html>
